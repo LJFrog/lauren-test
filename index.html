@@ -3,9 +3,24 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Hello</title>
+        <title>Lauren's Azure Test Page</title>
     </head>
     <body>
-        Inserting a web form .....
+        Try out the form! <br><br>
+		<form action="submitted.php" method="post">
+			Server Name (FQDN):
+			<input type="text" name="fqdn"><br>
+			Active:
+			<input type="radio" name="active" value="yes"> Yes 
+			<input type="radio" name="active" value="no"> No <br>
+			Client:
+			<select name="client">
+				<option value="admissions">Admissions</option>
+				<option value="bursar">Bursar</option>
+				<option value="internal">Internal</option>
+				<option value="oda">ODA</option>
+			</select><br>
+			<input type="submit" value="Submit">
+		</form>
     </body>
 </html>
